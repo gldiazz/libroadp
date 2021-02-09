@@ -294,7 +294,7 @@ corr_selected <- eeuu_brasil %>%
   
 ggcorrplot(corr_selected, type = "lower", lab = T, show.legend = F)
 ```
-Esta es una advertencia, ya que podría ser que el `poder_pais` no explique el `anio` después de todo, lo que haría que nuestros hallazgos iniciales fueran espurios.
+Esta es una advertencia, ya que podría ser que el `poder_pais` no explique el `voto` después de todo, lo que haría que nuestros hallazgos iniciales fueran espurios.
 Para diagnosticar raíces unitarias usaremos la función `purtest`. Hay múltiples tests disponibles, cada uno con diferentes especificaciones, por lo tanto, revisar todas sus diferencias excede el propósito de este capítulo. Utilizaremos dos, que son adecuadas para nuestro objetivo de detectar raíces unitarias en nuestras variables dependientes e independientes. Estos son los de @levinUnitRootTests2002 y @imTestingUnitRoots2003.
 
 
